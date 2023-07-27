@@ -411,7 +411,16 @@ MonoBehaviour:
   locationName: Bridge
   description: "You find yourself at the water\u2019s edge. Sea worn planks tied
     with barnacle encrusted ropes form a bridge over the water fading into the fog."
-  connections: []
+  connections:
+  - connectionName: North
+    description: Peering north across the sea to a dark shape hovers on the edge
+      of sight.
+    location: {fileID: 1737763587}
+    connectionEnabled: 1
+  - connectionName: South
+    description: To the south is the island
+    location: {fileID: 644856187}
+    connectionEnabled: 1
 --- !u!1 &418277678
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,7 +469,11 @@ MonoBehaviour:
   description: You find yourself walking down a stone jetty, as you move forward,
     slowly a hooded figure materialises from the mist. A Ferryman stands in his boat,
     it rocks in the gathering wind ringing the arrival bell.
-  connections: []
+  connections:
+  - connectionName: South
+    description: returns to the chapel
+    location: {fileID: 1829796952}
+    connectionEnabled: 1
 --- !u!1 &491506603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1263,11 @@ MonoBehaviour:
   locationName: West Shore
   description: You are on a black rock shore that leads to a still silver sea with
     no horizon.
-  connections: []
+  connections:
+  - connectionName: East
+    description: To the east is the island
+    location: {fileID: 644856187}
+    connectionEnabled: 1
 --- !u!4 &1099036526
 Transform:
   m_ObjectHideFlags: 0
@@ -1313,7 +1330,11 @@ MonoBehaviour:
   locationName: East Antechamber
   description: A dark antechamber, the remnants of the smashed statue scattered across
     the dusty stone floor.
-  connections: []
+  connections:
+  - connectionName: West
+    description: West returns to the Chapel knave.
+    location: {fileID: 1829796952}
+    connectionEnabled: 1
 --- !u!1 &1531528486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,7 +1572,11 @@ MonoBehaviour:
   locationName: East Shore
   description: You are on a black rock shore that leads to a still silver sea with
     no horizon.
-  connections: []
+  connections:
+  - connectionName: West
+    description: To the west is the island
+    location: {fileID: 644856187}
+    connectionEnabled: 1
 --- !u!1 &1682490353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,7 +1668,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locationName: Tree
   description: You stand by the tree and touch its blackened and gnarled surface.
-  connections: []
+  connections:
+  - connectionName: North
+    description: To the north is the rest of the Island
+    location: {fileID: 644856187}
+    connectionEnabled: 1
 --- !u!1 &1737763585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,7 +1721,16 @@ MonoBehaviour:
   description: Reaching the shore, the walls of an ancient fortification are carved
     into the cliff face. At the top of the cliff a stone chapel looks out over the
     sea,
-  connections: []
+  connections:
+  - connectionName: North
+    description: Steps snake northward, high up the rock face leading to a dark cave
+      entrance.
+    location: {fileID: 1829796952}
+    connectionEnabled: 1
+  - connectionName: South
+    description: The wooden bridge leads south over the sea.
+    location: {fileID: 204640581}
+    connectionEnabled: 1
 --- !u!1 &1762734110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,7 +1887,23 @@ MonoBehaviour:
     leads directly into the sea below, in the water you see piles of coins, some
     black with age some sparkling gold and silver in the light. A shape swims through
     the water.
-  connections: []
+  connections:
+  - connectionName: East
+    description: There is an antechamber to the east.
+    location: {fileID: 1444597272}
+    connectionEnabled: 1
+  - connectionName: West
+    description: and an antechamber to the west.
+    location: {fileID: 1953487907}
+    connectionEnabled: 1
+  - connectionName: North
+    description: To the north a carved wooden door.
+    location: {fileID: 418277680}
+    connectionEnabled: 1
+  - connectionName: South
+    description: To the south the steps snake down the cliff face to the shore.
+    location: {fileID: 1737763587}
+    connectionEnabled: 1
 --- !u!1 &1953487905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,7 +1951,11 @@ MonoBehaviour:
   locationName: West Antechamber
   description: A dark antechamber, smashed and upturned pews, the wall is covered
     with faded artworks and tapestries.
-  connections: []
+  connections:
+  - connectionName: East
+    description: East returns to the Chapel knave.
+    location: {fileID: 1829796952}
+    connectionEnabled: 1
 --- !u!1 &2002799976
 GameObject:
   m_ObjectHideFlags: 0
