@@ -9,6 +9,7 @@ public class Item : MonoBehaviour
     [TextArea] public string description;
 
     public bool itemEnabled = true;
+    public bool playerCanTake = true;
 
 
     // Start is called before the first frame update

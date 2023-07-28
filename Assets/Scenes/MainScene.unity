@@ -423,6 +423,7 @@ MonoBehaviour:
   itemName: staff
   description: a staff
   itemEnabled: 1
+  playerCanTake: 1
 --- !u!1 &52955963
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +471,7 @@ MonoBehaviour:
   itemName: FerrymanTalk3
   description: A Robed Ferryman
   itemEnabled: 1
+  playerCanTake: 1
 --- !u!1 &204640579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,8 +1054,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.0024414062, y: 64.83}
-  m_SizeDelta: {x: 0.5999756, y: 130.62}
+  m_AnchoredPosition: {x: -0.0024414062, y: 108.78}
+  m_SizeDelta: {x: 0.6, y: 218.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683862954
 MonoBehaviour:
@@ -1206,6 +1208,7 @@ MonoBehaviour:
   itemName: Statue
   description: A stone statue, smashed at the waist.
   itemEnabled: 1
+  playerCanTake: 1
 --- !u!1 &823055683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,6 +1421,8 @@ MonoBehaviour:
   actions:
   - {fileID: 11400000, guid: 40f285a359c984870b68b07fd47c6a0a, type: 2}
   - {fileID: 11400000, guid: 38eeefbc1165847e985a02f6e726f09f, type: 2}
+  - {fileID: 11400000, guid: e4ab95bb0975748f3baf93d1b47d7047, type: 2}
+  - {fileID: 11400000, guid: e43e40dfa962a45e8800f40238df00db, type: 2}
   introText: In the old old times there was an intro text tas was created!
 --- !u!4 &850928215
 Transform:
@@ -1481,6 +1486,7 @@ MonoBehaviour:
   itemName: FerrymanTalk1
   description: A Robed Ferryman
   itemEnabled: 1
+  playerCanTake: 1
 --- !u!1 &1099036524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,8 +1577,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.14941406, y: 65.07001}
-  m_SizeDelta: {x: 0.29883, y: -130.14}
+  m_AnchoredPosition: {x: 0.14941406, y: 109.01706}
+  m_SizeDelta: {x: 0.2988, y: -218.0341}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1336726624
 MonoBehaviour:
@@ -2173,6 +2179,7 @@ MonoBehaviour:
   itemName: FerrymanTalk2
   description: A Robed Ferryman
   itemEnabled: 1
+  playerCanTake: 1
 --- !u!1 &1736323995
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,6 +2444,7 @@ MonoBehaviour:
   itemName: Tree
   description: A large tree
   itemEnabled: 1
+  playerCanTake: 1
 --- !u!1 &1829796950
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,6 +2564,7 @@ MonoBehaviour:
   itemName: Well
   description: An old stone well
   itemEnabled: 1
+  playerCanTake: 1
 --- !u!1 &1836561922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,6 +2612,7 @@ MonoBehaviour:
   itemName: Tapestry
   description: A thread worn tapestry
   itemEnabled: 1
+  playerCanTake: 1
 --- !u!1 &1858524856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2650,6 +2660,7 @@ MonoBehaviour:
   itemName: Head
   description: A smashed statue head
   itemEnabled: 1
+  playerCanTake: 1
 --- !u!1 &1877026166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2697,6 +2708,7 @@ MonoBehaviour:
   itemName: Golden Coins
   description: Gold coins
   itemEnabled: 0
+  playerCanTake: 1
 --- !u!1 &1953487905
 GameObject:
   m_ObjectHideFlags: 0
