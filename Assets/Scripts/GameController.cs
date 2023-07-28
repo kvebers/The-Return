@@ -32,6 +32,7 @@ public class GameController : MonoBehaviour
     {
         string description = player.currentLocation.description + "\n";
         description += player.currentLocation.GetConnectionsText();
+        description += player.currentLocation.GetItemsText();
         currentText.text = description;
     }
 
@@ -63,7 +64,7 @@ public class GameController : MonoBehaviour
 
         foreach (Action action in actions)
         {
-            if (action.keyword == seperatedWords[0])
+            if (action.keyword.ToLower() == seperatedWords[0])
             {
                 if (seperatedWords.Length > 1)
                 {

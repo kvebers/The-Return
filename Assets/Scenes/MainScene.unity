@@ -376,6 +376,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11080200}
   m_CullTransparentMesh: 1
+--- !u!1 &37258342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 37258343}
+  - component: {fileID: 37258344}
+  m_Layer: 0
+  m_Name: Staff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &37258343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37258342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 823055684}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &37258344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37258342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d9d71aee24b46b39b85ef6a0f38302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: staff
+  description: a staff
+  itemEnabled: 1
 --- !u!1 &204640579
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,6 +470,7 @@ MonoBehaviour:
   locationName: Bridge
   description: "You find yourself at the water\u2019s edge. Sea worn planks tied
     with barnacle encrusted ropes form a bridge over the water fading into the fog."
+  items: []
   connections:
   - connectionName: North
     description: Peering north across the sea to a dark shape hovers on the edge
@@ -481,6 +529,7 @@ MonoBehaviour:
   description: You find yourself walking down a stone jetty, as you move forward,
     slowly a hooded figure materialises from the mist. A Ferryman stands in his boat,
     it rocks in the gathering wind ringing the arrival bell.
+  items: []
   connections:
   - connectionName: South
     description: returns to the chapel
@@ -900,6 +949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locationName: Island
   description: You stand on a misty island.
+  items: []
   connections:
   - connectionName: North
     description: There is a beach to the north.
@@ -1059,6 +1109,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683862952}
   m_CullTransparentMesh: 1
+--- !u!1 &823055683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 823055684}
+  m_Layer: 0
+  m_Name: Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &823055684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823055683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 301.10382, y: 717.9673, z: 93.594986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 37258343}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &824005847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1311,7 @@ MonoBehaviour:
   currentText: {fileID: 683862954}
   actions:
   - {fileID: 11400000, guid: 40f285a359c984870b68b07fd47c6a0a, type: 2}
+  - {fileID: 11400000, guid: 38eeefbc1165847e985a02f6e726f09f, type: 2}
   introText: In the old old times there was an intro text tas was created!
 --- !u!4 &850928215
 Transform:
@@ -1277,6 +1360,7 @@ MonoBehaviour:
   locationName: West Shore
   description: You are on a black rock shore that leads to a still silver sea with
     no horizon.
+  items: []
   connections:
   - connectionName: East
     description: To the east is the island
@@ -1592,6 +1676,7 @@ MonoBehaviour:
   locationName: East Antechamber
   description: A dark antechamber, the remnants of the smashed statue scattered across
     the dusty stone floor.
+  items: []
   connections:
   - connectionName: West
     description: West returns to the Chapel knave.
@@ -1834,6 +1919,7 @@ MonoBehaviour:
   locationName: East Shore
   description: You are on a black rock shore that leads to a still silver sea with
     no horizon.
+  items: []
   connections:
   - connectionName: West
     description: To the west is the island
@@ -1869,6 +1955,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLocation: {fileID: 644856187}
+  inventory:
+  - {fileID: 37258344}
 --- !u!4 &1682490355
 Transform:
   m_ObjectHideFlags: 0
@@ -1930,6 +2018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locationName: Tree
   description: You stand by the tree and touch its blackened and gnarled surface.
+  items: []
   connections:
   - connectionName: North
     description: To the north is the rest of the Island
@@ -1983,6 +2072,7 @@ MonoBehaviour:
   description: Reaching the shore, the walls of an ancient fortification are carved
     into the cliff face. At the top of the cliff a stone chapel looks out over the
     sea,
+  items: []
   connections:
   - connectionName: North
     description: Steps snake northward, high up the rock face leading to a dark cave
@@ -2149,6 +2239,7 @@ MonoBehaviour:
     leads directly into the sea below, in the water you see piles of coins, some
     black with age some sparkling gold and silver in the light. A shape swims through
     the water.
+  items: []
   connections:
   - connectionName: East
     description: There is an antechamber to the east.
@@ -2213,6 +2304,7 @@ MonoBehaviour:
   locationName: West Antechamber
   description: A dark antechamber, smashed and upturned pews, the wall is covered
     with faded artworks and tapestries.
+  items: []
   connections:
   - connectionName: East
     description: East returns to the Chapel knave.
@@ -2267,4 +2359,5 @@ MonoBehaviour:
     aside and you step onto the boat. As he casts off you look back once at this
     ghost land and then turn to face a wall of fog as you drift silently into the
     unknown."
+  items: []
   connections: []
