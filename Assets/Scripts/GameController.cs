@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
     public TMP_Text logText; // Change the type to TMP_Text
     public TMP_Text currentText; // Change the type to TMP_Text
 
+    public Action[] actions;
+
     [TextArea] public string introText;
 
     void Start()
@@ -50,8 +52,6 @@ public class GameController : MonoBehaviour
         logText.text += "<color=#55ee55ff>" + "Your command was: "+ textEntryField.text + "</color>";
     }
 
-    // todo process the commands (seperated words)
-
     void ProcessInput(string input)
     {
         input = input.ToLower();
@@ -59,6 +59,23 @@ public class GameController : MonoBehaviour
         char[] delimiter = {' '};
         string[] seperatedWords = input.Split(delimiter);
 
+
+
+        foreach (Action action in actions)
+        {
+            if (action.keyword == seperatedWords[0])
+            {
+                if (seperatedWords.Length > 1)
+                {
+                    action.RespondToInput(this, seperatedWords[1]);
+                }
+                else
+                {
+                    action.RespondToInput(this, "");
+                }
+                return;
+            }
+        }
         currentText.text = "Ei mate the spell you are using is incorrect, read the holy scroll of \"help\" for correct spells";
     }
 }
