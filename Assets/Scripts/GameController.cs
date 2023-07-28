@@ -32,4 +32,33 @@ public class GameController : MonoBehaviour
         description += player.currentLocation.GetConnectionsText();
         currentText.text = description;
     }
+
+    public void TextEntered()
+    {
+        LogCurrentText();
+        ProcessInput(textEntryField.text);
+        textEntryField.text = "";
+        textEntryField.ActivateInputField();
+    }
+
+    void LogCurrentText()
+    {
+        logText.text += "\n\n";
+        logText.text += currentText.text;
+
+        logText.text += "\n\n";
+        logText.text += "<color=#55ee55ff>" + "Your command was: "+ textEntryField.text + "</color>";
+    }
+
+    // todo process the commands (seperated words)
+
+    void ProcessInput(string input)
+    {
+        input = input.ToLower();
+
+        char[] delimiter = {' '};
+        string[] seperatedWords = input.Split(delimiter);
+
+        currentText.text = "Ei mate the spell you are using is incorrect, read the holy scroll of \"help\" for correct spells";
+    }
 }
