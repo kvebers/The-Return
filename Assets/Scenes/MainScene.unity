@@ -576,7 +576,10 @@ MonoBehaviour:
   description: You find yourself walking down a stone jetty, as you move forward,
     slowly a hooded figure materialises from the mist. A Ferryman stands in his boat,
     it rocks in the gathering wind ringing the arrival bell.
-  items: []
+  items:
+  - {fileID: 898841003}
+  - {fileID: 1703171263}
+  - {fileID: 52955965}
   connections:
   - connectionName: South
     description: returns to the chapel
@@ -1232,7 +1235,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 37258343}
-  - {fileID: 1768717627}
   - {fileID: 772466171}
   - {fileID: 1832405686}
   - {fileID: 898841002}
@@ -1241,6 +1243,7 @@ Transform:
   - {fileID: 1858524857}
   - {fileID: 1836561923}
   - {fileID: 1877026167}
+  - {fileID: 1819803023}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1826,7 +1829,8 @@ MonoBehaviour:
   locationName: East Antechamber
   description: A dark antechamber, the remnants of the smashed statue scattered across
     the dusty stone floor.
-  items: []
+  items:
+  - {fileID: 1858524858}
   connections:
   - connectionName: West
     description: West returns to the Chapel knave.
@@ -2215,7 +2219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locationName: Tree
   description: You stand by the tree and touch its blackened and gnarled surface.
-  items: []
+  items:
+  - {fileID: 1819803024}
   connections:
   - connectionName: North
     description: To the north is the rest of the Island
@@ -2385,7 +2390,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1768717626
+--- !u!1 &1819803022
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2393,22 +2398,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1768717627}
-  - component: {fileID: 1768717628}
+  - component: {fileID: 1819803023}
+  - component: {fileID: 1819803024}
   m_Layer: 0
-  m_Name: Statue
+  m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1768717627
+--- !u!4 &1819803023
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768717626}
+  m_GameObject: {fileID: 1819803022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2417,13 +2422,13 @@ Transform:
   m_Father: {fileID: 823055684}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1768717628
+--- !u!114 &1819803024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768717626}
+  m_GameObject: {fileID: 1819803022}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66d9d71aee24b46b39b85ef6a0f38302, type: 3}
@@ -2483,7 +2488,10 @@ MonoBehaviour:
     leads directly into the sea below, in the water you see piles of coins, some
     black with age some sparkling gold and silver in the light. A shape swims through
     the water.
-  items: []
+  items:
+  - {fileID: 772466172}
+  - {fileID: 1832405687}
+  - {fileID: 1877026168}
   connections:
   - connectionName: East
     description: There is an antechamber to the east.
@@ -2736,7 +2744,8 @@ MonoBehaviour:
   locationName: West Antechamber
   description: A dark antechamber, smashed and upturned pews, the wall is covered
     with faded artworks and tapestries.
-  items: []
+  items:
+  - {fileID: 1836561924}
   connections:
   - connectionName: East
     description: East returns to the Chapel knave.
